@@ -1,0 +1,15 @@
+h5py
+jupyterlab
+pandas
+scikit-learn
+scipy
+numpy
+matplotlib
+tensorflow_hub
+tensorflow-datasets
+tensorflow_addons
+tensorflow_probability
+tensorflow_text
+keras-cv
+keras-nlp
+keras-tuner
