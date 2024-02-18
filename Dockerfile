@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.3.1-base-ubuntu22.04
+FROM nvidia/cuda:12.3.1-base-ubuntu22.04-amd64
 
 # Set the working directory
 WORKDIR /tf
