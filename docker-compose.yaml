@@ -13,11 +13,10 @@ services:
               count: all  # Access all available GPUs
               capabilities: [gpu]
     volumes:
-      - tensorflow:/tf/notebooks  # Mount volume for notebooks
+      - ./notebooks:/tf/notebooks  # Mount volume for notebooks
       - jupyter-config:/root/.jupyter # Mount volume for jupyter config
     ports:
       - "8888:8888"  # Expose port 8888
 
 volumes:
-  tensorflow:  # Create volume for notebooks
   jupyter-config:  # Create volume for jupyter config
