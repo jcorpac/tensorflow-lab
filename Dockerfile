@@ -11,6 +11,8 @@ COPY requirements.txt /tmp
 
 # Install the requirements
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
+# Install Tensorflow with CUDA support last to ensure that it's not overwritten by other installs.
+RUN pip install --no-cache-dir -U tensorflow[and-cuda]
 
 # Start JupyterLab
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--NotebookApp.token=''"]
